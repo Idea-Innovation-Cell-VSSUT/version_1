@@ -161,7 +161,7 @@ ol {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid greenyellow;
+  border: 6px solid #08c4d0;
   border-top-color: #151515;
   border-bottom-color: #151515;
   border-radius: 50%;
