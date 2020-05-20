@@ -23,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: hel, sans-serif;
 }
 
 /*--------------------------------------------------------------#08c4d0
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   transition: 0.3s;
   font-size: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: hel,"Open Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down > a:after {
   content: "\ea99";
-  font-family: IcoFont;
+  font-family: hel;
   padding-left: 5px;
 }
 
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down .drop-down > a:after {
   content: "\eaa0";
-  font-family: IcoFont;
+  font-family: hel;
   position: absolute;
   right: 15px;
 }
@@ -341,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
-  font-family: IcoFont;
+  font-family:hel;
   padding-left: 10px;
   position: absolute;
   right: 15px;
@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 64px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: lem,"Poppins", sans-serif;
 }
 
 #hero h1 span {
@@ -513,7 +513,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: lem,"Poppins", sans-serif;
 }
 
 .section-title h2::after {
@@ -531,7 +531,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: lem,"Poppins", sans-serif;
   color: #151515;
 }
 
@@ -541,11 +541,11 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
-  font-family: "Poppins", sans-serif;
+  font-family: hel,"Poppins", sans-serif;
 }
 .about .content p {
   font-weight: 500;
-  font-family: serif;
+  font-family:hel, serif;
 }
 
 .about .content ul {
@@ -730,7 +730,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: hel, sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -912,7 +912,7 @@ section {
 .counts .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: hel, sans-serif;
   font-size: 14px;
   color: #3b3b3b;
 }
@@ -923,7 +923,7 @@ section {
   margin-top: 20px;
   color: #3b3b3b;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: hel,"Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1459,7 +1459,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: hel, sans-serif;
   color: #fff;
 }
 
