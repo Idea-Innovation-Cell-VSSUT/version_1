@@ -469,46 +469,6 @@ ol {
 	float: right;
 }
 
-.nav-menu ul {
-	list-style: none;
-}
-
-.nav-menu ul li {
-	display: inline;
-}
-
-.nav-menu ul li a {
-	display: inline-block;
-	padding: 40px 10px 5px;
-	text-transform: uppercase;
-	margin-right: 30px;
-	font-size: 14px;
-	color: #fff;
-	font-weight: 500;
-	position: relative;
-}
-
-.nav-menu ul li a:after {
-	position: absolute;
-	content: "";
-	width: 2px;
-	height: 0;
-	left: 50%;
-	margin-left: 1px;
-	top: 0;
-	background: #baff00;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.nav-menu ul li a:hover:after {
-	height: 25px;
-}
-
-.nav-menu ul li.active>a:after {
-	height: 25px;
-}
 
 /*---------------------------------------*/
 /*  Hero Section CSS

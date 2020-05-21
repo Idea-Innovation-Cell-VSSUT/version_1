@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Idea Innovation Cell</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Idea and Innovation Cell">
+	<meta name="keywords" content="Idea and Innovation Cell">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/icl.png" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+     <!-- Vendor CSS Files -->
+  <link href=".../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	
+	
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+	
+    
+    <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <meta name="apple-mobile-web-app-title" content="IIC">
+  <link rel="apple-touch-icon" href="../images/icons/icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="../images/icons/icon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" href="../images/icons/icon-128x128.png" sizes="128x128">
+  <link rel="apple-touch-icon" href="../images/icons/icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="../images/icons/icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="../images/icons/icon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../images/icons/icon-384x384.png" sizes="384x384">
+  <link rel="apple-touch-icon" href="../images/icons/icon-512x512.png" sizes="512x512">
+  <meta name="msapplication-TileImage" content="../images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000">
+  <meta name="theme-color" content="#000">
+    <style>
+        img {
+	max-width: 100%;
+}
+    .blog-post {
+	margin-bottom: 120px;
+}
+
+.blog-post .thumb {
+	padding: 25px;
+	position: relative;
+}
+
+.blog-post .thumb:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: calc(100% - 100px);
+	top: 0;
+	left: 0;
+	background: #f0f0f0;
+	z-index: -1;
+	-webkit-transition: all 0.4s ease-out 0s;
+	-o-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+}
+
+.blog-post .post-date {
+	font-size: 14px;
+	font-weight: 700;
+	color: #222;
+	display: inline-block;
+	background: #08c4d0;
+	padding: 4px 15px;
+	margin-bottom: 20px;
+}
+
+.blog-post h2 {
+	font-size: 30px;
+}
+
+.blog-post h2 a {
+	color: #222;
+}
+
+.blog-post p {
+	margin-bottom: 0;
+}
+
+.blog-post .post-meta {
+	margin-bottom: 40px;
+}
+
+.blog-post .post-meta a {
+	color: #727272;
+	font-size: 12px;
+	margin-right: 10px;
+}
+
+.blog-post .post-meta a i {
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+.blog-post:hover .thumb:after {
+	background: #08c4d0;
+}
+
+.pagination {
+	display: inline-block;
+	padding: 20px 30px;
+	background: #222;
+	border-radius: 0;
+}
+
+.pagination a {
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+}
+
+
+.search {
+	position: relative;
+}
+
+.widget-area {
+	margin-bottom: 80px;
+}
+
+.widget-area .widget-title {
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+.widget-area .search input {
+	width: 100%;
+	background: #f0f0f0;
+	border: none;
+	font-size: 12px;
+	padding: 10px;
+	padding-right: 35px;
+	font-style: italic;
+}
+
+.widget-area .search button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: none;
+	border: none;
+	color: #838383;
+	height: 100%;
+	width: 40px;
+}
+
+.widget-area ul {
+	list-style: none;
+}
+
+.widget-area ul li a {
+	font-size: 15px;
+	display: inline-block;
+	margin-bottom: 15px;
+	font-weight: 500;
+	color: #727272;
+	padding: 3px 10px;
+	padding-left: 25px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.widget-area ul li a:after {
+	position: absolute;
+	content: "+";
+	color: #838383;
+	left: 5px;
+	top: 3px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+.widget-area .rp-widget .rp-widget-item {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.widget-area .rp-widget .rp-widget-item:last-child {
+	margin-bottom: 0;
+}
+
+.widget-area .rp-widget .thumb {
+	width: 68px;
+	height: 68px;
+	float: left;
+	margin-right: 30px;
+	background: #ddd;
+	display: block;
+}
+
+.widget-area .rp-widget .rp-content {
+	padding-left: 98px;
+}
+
+.widget-area .rp-widget h4 {
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+.widget-area .rp-widget p {
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+.widget-area .quote-widget span {
+	font-size: 47px;
+	font-style: italic;
+	color: #727272;
+}
+
+.widget-area .quote-widget p {
+	font-style: italic;
+	margin-bottom: 0;
+	font-size: 13px;
+}
+
+.widget-area .instagram-widget {
+	padding-top: 30px;
+}
+
+.widget-area .instagram-widget a {
+	display: block;
+	overflow: hidden;
+	width: 33.33333%;
+	float: left;
+	position: relative;
+}
+
+
+
+
+.widget-area .instagram-widget a:hover:after,
+.widget-area .instagram-widget a:hover:before {
+	opacity: 1;
+}
+
+.widget-area .instagram-widget a img {
+	min-width: 100%;
+}
+
+  .site-btn {
+	display: inline-block;
+	font-weight: 700;
+	border: 4px solid;
+	min-width: 200px;
+	text-align: center;
+	padding: 19px 0;
+	position: relative;
+	background-color: transparent;
+	margin-right: 15px;
+	z-index: 1;
+}
+        
+
+.site-btn:after,
+.site-btn:before {
+	position: absolute;
+	content: "";
+	width: 26px;
+	height: 4px;
+	right: -15px;
+}
+
+.site-btn:after {
+	bottom: 8px;
+}
+
+.site-btn:before {
+	bottom: 18px;
+}
+
+.site-btn.sb-light {
+	color: #fff;
+}
+
+.site-btn.sb-light:after,
+.site-btn.sb-light:before {
+	background: #fff;
+}
+
+.site-btn.sb-dark {
+	color: #000;
+}
+
+.site-btn.sb-dark:after,
+.site-btn.sb-dark:before {
+	background: #000;
+}
+
+.site-btn.sb-solid-color {
+	background: #08c4d0;
+	border-color: #08c4d0;
+}
+
+.site-btn.sb-solid-color:after,
+.site-btn.sb-solid-color:before {
+	background: #000;
+}
+
+.site-btn.sb-solid-dark {
+	background: #000;
+	border-color: #000;
+	color: #08c4d0;
+}
+
+.site-btn.sb-solid-dark:after,
+.site-btn.sb-solid-dark:before {
+	background: #08c4d0;
+}
+        .site-btn:hover{
+            background-color: #08c4d0;
+        }
+
+    
+    
+    
+    
+    </style>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+    <style>
+        @font-face
+{
+            src: url(../fonts/Helvetica.ttf);
+            font-family:hel;
+}
+    @font-face
+{
+            src: url(../fonts/LemonMilk.otf);
+            font-family:lem;
+}
+h1
+    {
+        font-family: lem;
+        }
+</style>
+	<!-- Page Preloder -->
+	
+     <header id="header" class="fixed-top " style="background-color: black">
+    <div class="container d-flex align-items-center justify-content-between">
+
+       <!--<h1 class="logo"><a href="index.html">Gp<span>.</span></a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo"><img src="../assets/img/icell_white.png" alt="" class="img-fluid"></a>
+    
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="../index.html#hero">Home</a></li>
+          <li><a href="../index.html#about">About Us</a></li>
+             <li class="drop-down"><a href="">All Events</a>
+            <ul>
+              
+                                   <li><a href="Pies.html">PIES</a></li>
+                  <li><a href="COVID19.html">Hack For COVID 19</a></li>
+                  <li><a href="ISRO%20SEMINAR.html">ISRO SEMINAR</a></li>
+                  <li><a href="ISRO%20SPACE%20ON%20WHEELS.html">ISRO SPACE ON WHEELS</a></li>
+                
+            </ul>
+          </li>
+          <li><a href="../PROJECTS.html">Projects</a></li>
+          <li><a href="blog.html">Achievements</a></li>
+          <li><a href="../index.html#team">Team</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="https://iicworklog.typeform.com/to/bNJ8H5" class="get-started-btn scrollto">Collaborate</a>
+
+    </div>
+  </header><!-- End Header -->
+    <section id="hero" class="d-flex align-items-center justify-content-center" >
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-md-6">
+            
+             <img src="../assets/img/hero_iic.png"  width="400px" height="400px"class="img-fluid">
+            
+            
+            
+            
+            
+        </div>
+          <div class="col-md-6 align-items-center justify-content-center" style="font-family: lem;">
+            
+         <br>
+              <br><br>
+            
+            <h1>Hack For COVID 19</h1>
+            
+            
+            
+            
+        </div>
+      </div>
+
+
+
+    </div>
+      
+
+  </section><!-- End Hero -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310"><path fill="#000000" fill-opacity="1" d="M0,160L40,149.3C80,139,160,117,240,101.3C320,85,400,75,480,85.3C560,96,640,128,720,154.7C800,181,880,203,960,192C1040,181,1120,139,1200,144C1280,149,1360,203,1400,229.3L1440,256L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+	
+	<br><br>
+    
+
+	<!-- Page section start -->	
+	<section class="page-section spad">
+		<div class="container">
+            <div class="section-title" data-aos="fade-right">
+          <h2>Hack For COVID 19</h2>
+          <p>Related Posts</p>
+        </div>
+            
+			<div class="row">
+              
+				<div class="col-lg-9 col-md-12">
+					<!-- Blog post -->
+                    <div class="blog-post">
+						<div class="thumb">
+							<a href="#">
+								<img src="../assets/activity/covid1.jpg" alt="">
+							</a>
+						</div>
+					
+                    <div class="blog-content">
+							<div class="post-date">18 April 2020</div>
+							<h2><a href="">Idea Innovation Cell is proud to present its top teams !</a></h2>
+							
+							<p>Hack for covid-19 , an online Hackathon which celebrates the indomitable spirit of being human by bringing together the brightest minds of the nation against the ongoing unprecedented devastation.
+
+After a rigorous scrutinization process, Idea Innovation Cell is proud to present its top teams !
+Who brought forward Ideas which matter and solutions which make a difference ! The top 3 teams will be provided with constant support to convert their ideas into product and incubation facility to launch their own startup.
+
+Furthermore, All the finalists will be provided with appropriate guidance and mentorship to develop workable prototypes for various use cases.
+Heartiest congratulations !
+                                <br><strong>Ideas of Winning teams :<a href="http://iichackcovid19.github.io/"style="color: green">VIEW</a></strong>
+                            </p>
+						</div>
+					</div>
+                    <div class="blog-post">
+						<div class="thumb">
+							<a href="#">
+								<img src="../assets/activity/covid19con.jpg" alt="">
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="post-date">17 April 2020</div>
+							<h2><a href="">The top three most influential and realizable ideas will be announced shortly!</a></h2>
+							
+							<p>As humanity struggles to extinguish the spreading fire of the deadly COVID 19, Idea Innovation Cell, VSSUT, Burla organised an online hackathon HACK FOR COVID 19, an instrument of innovation to pierce through the darkness veiling mankind. A first of its kind,it provided an online platform for all the ingenious minds to come together in this fight against the COVID-19 pandemic through their innovative solutions and build effective and feasible products.The event unfolded in three tiers : abstract submission, a detailed presentation submission and finally an idea pitching round infront of an esteemed panel of judges.The participants hailed from various engineering and other colleges from across the country. After rigorous scrutiny and careful consideration in each round ,the top then finalists were chosen from the pool of 47 registrations.
+
+To test their mettle in the finale we had the honour of having few of the finest and experienced intellectuals with concerned conscience for the nation: Shri. Bimal Krushna Mishra (President of VSSUT Alumni Association) , Dr. Bibhuti Bhusan Pati (Dean of Faculty &amp; Planning, VSSUT Burla), Dr. Debadutta Mishra (Head of Innovation centre, VSSUT Burla), Dr. Sudhanshu Sekhar Dash (Dean of Students' Welfare, VSSUT Burla) , Er. Ashesh Padhy (Odisha head of JSW Energy), Dr-Harish Kumar Sahoo (Vice President of Technical Society, VSSUT Burla). The Finale has successfully took place in 2 slots on 16th and 17th of April, 2020.
+
+The technical presentations have been heard and the scores have been locked. All the ideas would be provided incubation support, mentorship and the teams will be provided guidance in converting them into workable prototypes for various use cases. The top three most influential and realizable ideas will be announced shortly. Stay tuned !</p>
+						</div>
+					</div>
+                    <div class="blog-post">
+						<div class="thumb">
+							<a href="#">
+								<img src="../assets/activity/covidwin1.jpg" alt="">
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="post-date">13 April 2020</div>
+							<h2><a href="">Warmest felicitations to all the 10 teams</a></h2>
+							
+							<p>Warmest felicitations to all the 10 teams who managed to sail through the first two rounds and could accomplish to reach the last stage of this competition.
+After careful consideration and keen scrutinization we have found out the 10 best teams among the 24 semi-finalists.
+So pull up your socks and get ready for the final round!</p>
+						</div>
+					</div>
+                    <div class="blog-post">
+						<div class="thumb">
+							<a href="#">
+								<img src="../assets/activity/covidwin2.jpg" alt="">
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="post-date">2 April 2020</div>
+							<h2><a href="">Heartiest congratulations to all teams</a></h2>
+							
+							<p>Heartiest congratulations to all teams who sail through to the next round!
+After rigorous scrutiny and careful consideration of all the 47 teams we have found our top 24 .
+This just a step ahead in the greater step we take together in the fight against COVID-19 !</p>
+						</div>
+					</div>
+                    <div class="blog-post">
+						<div class="thumb">
+							<a href="#">
+								<img src="../assets/activity/covid19.jpg" alt="">
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="post-date">26 March 2020</div>
+							<h2><a href="">IDEA INNOVATION CELL of VSSUT, Burla present to you 'HACK FOR COVID -19'</a></h2>
+							
+							<p>The Official registration link :
+<a href="http://iichackcovid19.github.io" >http://iichackcovid19.github.io</a><br>
+
+                                Are you willing to join the campaign against COVID-19 and stop this ongoing unprecedented devastation ?
+IDEA INNOVATION CELL of VSSUT, Burla present to you
+'HACK FOR COVID -19' an online hackathon to share ideas to curb and cure the CORONA VIRUS. It's time we came together to find solutions that make a difference and emerge as true soldiers of humanity. Come out to this arena and join us in this battle against COVID -19 !</p>
+						</div>
+                    </div>
+                    
+                  
+                    
+                    
+                    
+                   
+                   
+                    
+                    
+                    
+                   
+						
+				
+					
+                    
+                    
+                    
+                </div>
+                  
+            </div>
+                
+        </div></section>
+					
+
+	<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      
+      
+    
+
+    <div class="container">
+        <center>
+        <div class="footer-info">
+              
+              <div class="social-links mt-3">
+                  <img src="../assets/img/icl3.png" width="300px " height="300px" class="img-fluid"><br><br>
+
+                <a href="https://www.facebook.com/ideaclubvssut" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/idea_labs/" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+                <a href="https://www.linkedin.com/company/idea-and-innovation-cell/" class="linkedin"><i class="bx bxl-linkedin"></i></a> 
+                  
+                 <a href="https://www.youtube.com/channel/UCl1eNHmMb4IjWveBRbKU7Iw" class="youtube"><i class="bx bxl-youtube"></i></a>  
+              </div>
+            </div>
+            </center>
+        
+      <div class="copyright">
+        &copy; Copyright <strong><span>IIC</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+          <strong>Team of Developers</strong><br><br>
+          <a href=https://github.com/rajdas2001><img src="../developers/RD.png"  width="40px" height="40px"class="img-fluid"></a>
+          <a href=https://github.com/prasenjitghose36><img src="../developers/PG.png"  width="40px" height="40px"class="img-fluid"></a>
+          <a href=https://github.com/sAURYAMAN777><img src="../developers/SN.png"  width="40px" height="40px"class="img-fluid"></a>
+          <a href="https://github.com/patelaryan7751"><img src="../developers/AP.png"  width="40px" height="40px"class="img-fluid"></a>
+          
+          
+      </div>
+    </div>
+        </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+<div id="preloader" class="contain">
+     </div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+    <script src="../app.js"></script>
+
+
+</body>
+
+</html>
