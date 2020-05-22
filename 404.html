@@ -1,47 +1,90 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>404 | Page not found.</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+  <style type="text/css">
+    body {
+      padding: 30px 20px;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      color: #727272;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 40px;
+      font-size: 60px;
+      line-height: 1;
+      color: #252427;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 100px 0 0;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #A299AC;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 1em 0;
+    }
+
+    .go-back a {
+      display: inline-block;
+      margin-top: 3em;
+      padding: 10px;
+      color: #1B1A1A;
+      font-weight: 700;
+      border: solid 2px #e7e7e7;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .go-back a:hover {
+      border-color: #1B1A1A;
+    }
+
+    @media screen and (min-width: 768px) {
+      body {
+        padding: 50px;
       }
-    </style>
- <link rel="manifest" href="manifest.json">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <meta name="apple-mobile-web-app-title" content="IIC">
-  <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" sizes="72x72">
-  <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" sizes="96x96">
-  <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" sizes="128x128">
-  <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" sizes="144x144">
-  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" sizes="384x384">
-  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" sizes="512x512">
-  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-  <meta name="msapplication-TileColor" content="#000">
-  <meta name="theme-color" content="#000">
-  </head>
-  <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-    </div>
-      <script src="app.js"></script>
-  </body>
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <center><a href="https://placeholder.com" class="brand"><img src="assets/img/icell_black.png" width="100" height="100"></a></center>
+
+  <h2>404</h2>
+  <h1>Page not found.</h1>
+
+  <p>We’re sorry but it appears that we can’t find the page you were looking for. Usually this occurs because of a page that previously existed was removed or you’ve mistyped the address.</p>
+
+  <span class="go-back"><a href="index.html">Go back</a></span>
+</div>
+
+</body>
 </html>
