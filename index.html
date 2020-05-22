@@ -14,7 +14,7 @@
   <link href="assets/img/iclnews.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="Firebase-Contact-Form-master/style.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -45,181 +45,7 @@
   <meta name="theme-color" content="#000">
 </head>
     <style>
-            @font-face
-{
-            src: url(fonts/Helvetica.ttf);
-            font-family:hel;
-}
-    @font-face
-{
-            src: url(fonts/LemonMilk.otf);
-            font-family:lem;
-}
-        @media (min-width: 768px){
-        .text1{
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-  background: black;
-  position: relative;
-  animation: text 3s infinite;
-}
-        .span{
-  text-transform: uppercase;
-  display: block;
-}
-.text2{
-  font-size: 30px;
-  color: #6ab04c;
-}
-
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%{
-    letter-spacing: 15px;
-    margin-bottom: -40px;
-  }
-  85%{
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-}
-        }
-@media (max-width: 767px){
-        .text1{
-  color: white;
-  font-size: 35px;
-  
-}
-        
-.text2{
-  font-size: 35px;
-  color: #6ab04c;
-}
-
-
-        }
-        .text11{
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-  background: black;
-  position: relative;
-  animation: text 3s infinite;
-}
-        .span{
-  text-transform: uppercase;
-  display: block;
-}
-.text12{
-  font-size: 30px;
-  color: #6ab04c;
-    animation: text 3s infinite;
-}
-
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%{
-    letter-spacing: 15px;
-    margin-bottom: -40px;
-  }
-  85%{
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-}
-        .colo:hover{
-            display: inline-block;
-            background-color: #08c4d0;
-        }
-        
-                .site-btn {
-	display: inline-block;
-	font-weight: 700;
-	border: 4px solid;
-	min-width: 200px;
-	text-align: center;
-	padding: 19px 0;
-	position: relative;
-	background-color: transparent;
-	margin-right: 15px;
-	z-index: 1;
-}
-        
-
-.site-btn:after,
-.site-btn:before {
-	position: absolute;
-	content: "";
-	width: 26px;
-	height: 4px;
-	right: -15px;
-}
-
-.site-btn:after {
-	bottom: 8px;
-}
-
-.site-btn:before {
-	bottom: 18px;
-}
-
-.site-btn.sb-light {
-	color: #fff;
-}
-
-.site-btn.sb-light:after,
-.site-btn.sb-light:before {
-	background: #fff;
-}
-
-.site-btn.sb-dark {
-	color: #000;
-}
-
-.site-btn.sb-dark:after,
-.site-btn.sb-dark:before {
-	background: #000;
-}
-
-.site-btn.sb-solid-color {
-	background: #baff00;
-	border-color: #baff00;
-}
-
-.site-btn.sb-solid-color:after,
-.site-btn.sb-solid-color:before {
-	background: #000;
-}
-
-.site-btn.sb-solid-dark {
-	background: #000;
-	border-color: #000;
-	color: #baff00;
-}
-
-.site-btn.sb-solid-dark:after,
-.site-btn.sb-solid-dark:before {
-	background: #baff00;
-}
-        .site-btn:hover{
-            background-color: #08c4d0;
-        }
-        
-    
-    
-    
-    
+@font-face{src:url(fonts/Helvetica.ttf);font-family:hel}@font-face{src:url(fonts/LemonMilk.otf);font-family:lem}@media (min-width:768px){.text1{color:#fff;font-size:30px;font-weight:700;letter-spacing:4px;margin-bottom:20px;background:#000;position:relative;animation:text 3s infinite}.span{text-transform:uppercase;display:block}.text2{font-size:30px;color:#6ab04c}@keyframes text{0%{color:#000;margin-bottom:-40px}30%{letter-spacing:15px;margin-bottom:-40px}85%{letter-spacing:8px;margin-bottom:-40px}}}@media (max-width:767px){.text1{color:#fff;font-size:35px}.text2{font-size:35px;color:#6ab04c}}.text11{color:#fff;font-size:30px;font-weight:700;letter-spacing:4px;margin-bottom:20px;background:#000;position:relative;animation:text 3s infinite}.span{text-transform:uppercase;display:block}.text12{font-size:30px;color:#6ab04c;animation:text 3s infinite}@keyframes text{0%{color:#000;margin-bottom:-40px}30%{letter-spacing:15px;margin-bottom:-40px}85%{letter-spacing:8px;margin-bottom:-40px}}.colo:hover{display:inline-block;background-color:#08c4d0}.site-btn{display:inline-block;font-weight:700;border:4px solid;min-width:200px;text-align:center;padding:19px 0;position:relative;background-color:transparent;margin-right:15px;z-index:1}.site-btn:after,.site-btn:before{position:absolute;content:"";width:26px;height:4px;right:-15px}.site-btn:after{bottom:8px}.site-btn:before{bottom:18px}.site-btn.sb-light{color:#fff}.site-btn.sb-light:after,.site-btn.sb-light:before{background:#fff}.site-btn.sb-dark{color:#000}.site-btn.sb-dark:after,.site-btn.sb-dark:before{background:#000}.site-btn.sb-solid-color{background:#baff00;border-color:#baff00}.site-btn.sb-solid-color:after,.site-btn.sb-solid-color:before{background:#000}.site-btn.sb-solid-dark{background:#000;border-color:#000;color:#baff00}.site-btn.sb-solid-dark:after,.site-btn.sb-solid-dark:before{background:#baff00}.site-btn:hover{background-color:#08c4d0}
     </style>
 
 <body>
@@ -238,6 +64,16 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="PROJECTS.html">Projects</a></li>
              <li><a href="IIC-master/blog2.html">Activities</a></li>
+            <li class="drop-down"><a href="">All Events</a>
+            <ul>
+              
+                                   <li><a href="IIC-master/Pies.html">PIES</a></li>
+                  <li><a href="IIC-master/COVID19.html">Hack For COVID 19</a></li>
+                  <li><a href="IIC-master/ISRO%20SEMINAR.html">ISRO SEMINAR</a></li>
+                  <li><a href="IIC-master/ISRO%20SPACE%20ON%20WHEELS.html">ISRO SPACE ON WHEELS</a></li>
+                  
+                
+            </ul>
           <li><a href="IIC-master/blog.html">Achievements</a></li>
           <li><a href="#team">Team</a></li>
           
@@ -463,7 +299,7 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
               
             <div class="icon-box">
             
-              <div class=""><a href="https://patelaryan7751.github.io/VSLV"><img src="IIC-master/img/vslvlogofinal.png" class="img-fluid"></a>
+              <div class=""><a href="https://patelaryan7751.github.io/VSLV"><img src="assets/img/vslvlogofinal.png" class="img-fluid"></a>
                 </div>
               <h4><a href="https://patelaryan7751.github.io/">VSLV</a></h4>
               <p>India’s First Multipurpose Student Rocketry Mission- Launching our own satellite Launching vehicle to a height of 50+ km and deploying a Pico-sat which will monitor the Hirakud Dam along with these it can be used in different applications like Cloud Seeding, short range guided missile.</p>
@@ -497,7 +333,7 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
               <div class=""><a href="assets/img/3darieal.jpg"><img src="assets/img/3darieald.jpg" class="img-fluid"></a></div>
                 <br>
               <h4><a href="assets/img/3darieal.jpg">3D Aerial Mapping</a></h4>
-             <p>Using unmanned vehicle photogrammetric data acquisition of a given region to be surveyed, using brushless camera gimbal with motor controller. The Data is processed and rendered in advanced 3d Simulation Software. Project, is being currently used for volumetric analysis of coal.</p>
+             <p>Using unmanned vehicle photogrammetric data acquisition of a given region to be surveyed, using brushless camera gimbal with motor controller. The Data is processed and rendered in advanced 3d Simulation Software. Project is being currently used for volumetric analysis of coal.</p>
             </div>
           </div>
 
@@ -517,7 +353,7 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
               <div class=""><a href="assets/img/smart.jpg"><img src="assets/img/smartd.jpg" class="img-fluid"></a></div>
                 <br><br>
               <h4><a href="assets/img/smart.jpg">Smart parking solution</a></h4>
-              <p>By using a network of optical detectors, the sensors will transmit real time data regarding the availability of parking slots. It will be integrated using IoT, and Google Maps API to display status of theparking spaces of the chosen destination, in an IoT based Android app. The Parking spaces can be pre-booked for the given time interval.</p>
+              <p>By using a network of optical detectors, the sensors will transmit real time data regarding the availability of parking slots. It will be integrated using IoT, and Google Maps API to display status of the parking spaces of the chosen destination, in an IoT based Android app. The Parking spaces can be pre-booked for the given time interval.</p>
             </div>
           </div>
     
@@ -549,7 +385,7 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
     
             
     <div class="col-md-6 " data-aos="fade-left" data-aos-delay="100">
-            <img src="img/limits.jpg" class="img-fluid"  style="box-shadow: 10px 10px grey"alt="">
+            <img src="assets/img/ACH-01.jpg" class="img-fluid"  style="box-shadow: 10px 10px grey"alt="">
           </div>
         
         
@@ -619,11 +455,6 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
           <h2>Contact</h2>
           <p>Contact Us</p>
         </div>
-
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.2708391034384!2d83.90156731424685!3d21.497108885746616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da4ec28af2d%3A0xb33a5cc9af8c33c7!2sVeer%20Surendra%20Sai%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1584687510478!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
-        </div>
-
         <div class="row mt-5">
 
           <div class="col-lg-4">
@@ -652,32 +483,40 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            
+    
+    <div class="wrapper">
+      <div class="company-info">
+        
+        
+      </div>
+      <div class="contact">
+        <h3>Leave a message for us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p class="full">
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p class="full">
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p class="full">
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  
 
           </div>
 
@@ -700,7 +539,7 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
         <div class="footer-info">
               
               <div class="social-links mt-3">
-                  <img src="assets/img/icl3.png" width="300px " height="300px" class="img-fluid"><br><br>
+                  <img data-src="assets/img/icl3.png" width="300px " height="300px" class="img-fluid lazyload"><br><br>
 
                 <a href="https://www.facebook.com/ideaclubvssut" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/idea_labs/" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -718,10 +557,10 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
       <div class="credits">
         
           <strong>Team of Developers</strong><br><br>
-          <a href=https://github.com/rajdas2001><img src="developers/RD.png"  width="40px" height="40px"class="img-fluid"></a>
-          <a href=https://github.com/prasenjitghose36><img src="developers/PG.png"  width="40px" height="40px"class="img-fluid"></a>
-          <a href=https://github.com/sAURYAMAN777><img src="developers/SN.png"  width="40px" height="40px"class="img-fluid"></a>
-          <a href="https://github.com/patelaryan7751"><img src="developers/AP.png"  width="40px" height="40px"class="img-fluid"></a>
+          <a href=https://github.com/rajdas2001><img data-src="developers/RD.png"  width="40px" height="40px"class="img-fluid lazyload"></a>
+          <a href=https://github.com/prasenjitghose36><img data-src="developers/PG.jpg"  width="40px" height="40px"class="img-fluid lazyload" ></a>
+          <a href=https://github.com/sAURYAMAN777><img data-src="developers/SN.jpg"  width="40px" height="40px"class="img-fluid lazyload"></a>
+          <a href="https://github.com/patelaryan7751"><img data-src="developers/AP.jpg"  width="40px" height="40px"class="img-fluid lazyload"></a>
           
           
       </div>
@@ -734,19 +573,22 @@ Being Engineers at heart, we seek to use our Technical ingenuity to fulfil Engin
      </div>
 
   <!-- Vendor JS Files -->
+    <script src="./assets/lazysizes.min.js" async=""></script>
   <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
+  
+  <script   src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script  src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script  src="assets/vendor/venobox/venobox.min.js"></script>
+  <script  src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script  src="assets/vendor/counterup/counterup.min.js"></script>
+  <script  src="assets/vendor/aos/aos.js"></script>
+  
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script defer src="assets/js/main.js"></script>
+    <script  defer src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script  defer src="./Firebase-Contact-Form-master/main.js"></script>
     <script src="app.js"></script>
 <script src="feed.js"></script>
 
