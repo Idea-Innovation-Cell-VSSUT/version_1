@@ -1,13 +1,13 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-apiKey: "AIzaSyC3O9vkdL6fy7a0iESfiL16bPLipIZye08",
-    authDomain: "databaset-fd4aa.firebaseapp.com",
-    databaseURL: "https://databaset-fd4aa.firebaseio.com",
-    projectId: "databaset-fd4aa",
-    storageBucket: "databaset-fd4aa.appspot.com",
-    messagingSenderId: "383891965750",
-    appId: "1:383891965750:web:58997e8ad4eb433dd7d597",
-    measurementId: "G-QDBL3R55YH"
+apiKey: "AIzaSyCFXQqvJGGpcNeSittYro6zy5e03itmDLg",
+  authDomain: "ideainnovationcell.firebaseapp.com",
+  databaseURL: "https://ideainnovationcell.firebaseio.com",
+  projectId: "ideainnovationcell",
+  storageBucket: "ideainnovationcell.appspot.com",
+  messagingSenderId: "368936158980",
+  appId: "1:368936158980:web:14751bb19594425bfcb251",
+  measurementId: "G-4E9R4VDDRL"
 };
 firebase.initializeApp(config);
 
