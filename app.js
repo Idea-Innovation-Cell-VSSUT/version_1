@@ -1,6 +1,6 @@
 var defferedPrompt;
 if ('serviceWorker' in navigator){
-    navigator.serviceWorker.register('version_1/sw.js').then(function(){
+    navigator.serviceWorker.register('/sw.js').then(function(){
 console.log("sw registered");
     });
 }
