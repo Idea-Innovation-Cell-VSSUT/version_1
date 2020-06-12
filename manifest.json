@@ -4,7 +4,7 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
-  "Scope": "/version_1",
+  "Scope": "/",
   "start_url": "/index.html",
     "gcm_sender_id":"103953800507",
   "icons": [

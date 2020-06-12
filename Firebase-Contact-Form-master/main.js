@@ -8,8 +8,17 @@ apiKey: "AIzaSyCFXQqvJGGpcNeSittYro6zy5e03itmDLg",
   messagingSenderId: "368936158980",
   appId: "1:368936158980:web:14751bb19594425bfcb251",
   measurementId: "G-4E9R4VDDRL"
+ 
 };
 firebase.initializeApp(config);
+
+var hjcordiref= firebase.database().ref("dataq/");
+     hjcordiref.orderByChild('quantity').on("child_added", function(data){
+          var newVoke = data.val();
+         console.log(data.val());
+          document.getElementById("txt").textContent=data.val();
+     });
+
 
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function(){
@@ -30,12 +39,12 @@ function getRegisterToken(){
 messaging.getToken().then((currentToken) => {
   if (currentToken) {
       
-      var cordiRef = firebase.database().ref('fcm');
+      var cordiRef = firebase.database().ref(`fcm/${currentToken}`);
     var data={
         fcmtoken:currentToken
         
     }
-    cordiRef.push(data).then(function(){
+    cordiRef.set(data).then(function(){
       console.log(currentToken);
     sendTokenToServer(currentToken);
          
@@ -74,48 +83,5 @@ function isTokenSentToServer() {
 
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('messages');
 
-// Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-// Submit form
-function submitForm(e){
-  e.preventDefault();
-
-  // Get values
-  var name = getInputVal('name');
-  var email = getInputVal('email');
-  var phone = getInputVal('phone');
-  var message = getInputVal('message');
-
-  // Save message
-  saveMessage(name,email, phone, message);
-
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
-
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
-
-  // Clear form
-  document.getElementById('contactForm').reset();
-}
-
-// Function to get get form values
-function getInputVal(id){
-  return document.getElementById(id).value;
-}
-
-// Save message to firebase
-function saveMessage(name,email, phone, message){
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    email:email,
-    phone:phone,
-    message:message
-  });
-}
