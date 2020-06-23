@@ -16,7 +16,7 @@ var hjcordiref= firebase.database().ref("dataq/");
      hjcordiref.orderByChild('quantity').on("child_added", function(data){
           var newVoke = data.val();
          console.log(data.val());
-          document.getElementById("txt").textContent=data.val();
+        
      });
 
 
