@@ -1,0 +1,3 @@
+User-agent:*
+Disallow:
+Sitemap:https://iic-vssut.org/sitemap.xml
