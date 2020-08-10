@@ -168,12 +168,17 @@ const createChild = (postData) =>{
         let img = document.createElement("img");
         img.setAttribute("src", postData.cover);
         img.setAttribute("loading", "lazy");
+        img.setAttribute("class", "justify-content-center");
 
         let title = document.createElement("h3");
         let titleNode = document.createTextNode(postData.title);
+         title.setAttribute("class", "justify-content-center");
         title.appendChild(titleNode);
 
         let content = document.createElement("div");
+       content.style.margin="0px";
+        content.style.padding="0px";
+        content.setAttribute("class", "container");
         let contentNode = document.createTextNode(postData.content);
         content.appendChild(contentNode);
 
@@ -467,14 +472,4 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 //nav functions
-openNav.addEventListener("click", (e) => {
-    document.getElementById("nav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-});
-
-closeNav.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.getElementById("nav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "";
-})
 
